@@ -17,6 +17,7 @@ public class FuncionarioMain {
         scan.nextLine();
 
         for (int i = 0; i < n; i++) {
+            System.out.println("--------------------------------------------");
             System.out.println("Informe o id do #" +(i+1) + " funcionário: " );
             while (!scan.hasNextInt()){
                 System.out.println("valor incorreto, tente novamente: ");
@@ -81,7 +82,8 @@ public class FuncionarioMain {
 
 
         for (Funcionario funcionario: funcionarios) {
-        System.out.println("Relatório atualizado" + funcionario);
+            System.out.println("Relatório atualizado:");
+        System.out.println(funcionario);
     }
 
     scan.close();
